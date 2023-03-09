@@ -4,9 +4,7 @@ import glob
 from deflacue import deflacue
 from mutagen.flac import FLAC, Picture
 import os
-from pysplitcue.splitcue import PySplitCue
 import chardet
-import magic
 
 # CUE处理工具箱
 bias = "pro_"
@@ -35,12 +33,9 @@ for k in arr:
 
     for c in cue:
         cuen = os.getcwd() + '\\' + c
-        m = magic.Magic(mime_encoding=True)
-        encoding = m.from_file(c)
         with open(cuen, 'rb') as f:
             data = f.read()
             encoding = chardet.detect(data)['encoding']
-
         try:
             process = deflacue.Deflacue(source_path=cuen, encoding=encoding)
             process.process_cue(cue_file=cuen, target_path=k, delete=True, music=music, img=img, needImage=True)
