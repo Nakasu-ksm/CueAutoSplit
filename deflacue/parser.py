@@ -161,7 +161,7 @@ class CueData:
     def add_track_index(self, *, pos: str):
         self._current_track.start = pos_to_frames(pos)
 
-CueParser
+
 class CueParser:
     """Simple Cue Sheet file parser."""
 
