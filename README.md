@@ -13,6 +13,7 @@ Place the folder containing cue into the directory
 
 RUN CODE
 ```python
+pip install mutagen
 python process.py
 ```
 
