@@ -20,7 +20,7 @@ python process.py
 
 ## Thanks
 Sox
-[Deflacue](https://github.com/idlesign/deflacu/ "Deflacue")
+[Deflacue](https://github.com/idlesign/deflacue/ "Deflacue")
 
 
 
