@@ -13,6 +13,7 @@ cueを含むフォルダをコードディレクトリに入れます(cueをフ�
 
 実行コードです
 ```python
+pip install mutagen
 python process.py
 ```
 
