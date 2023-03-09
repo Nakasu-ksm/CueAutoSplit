@@ -13,6 +13,7 @@ https://sourceforge.net/projects/sox/files/sox/
 
 运行代码
 ```python
+pip install mutagen
 python process.py
 ```
 
