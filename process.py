@@ -4,13 +4,17 @@ import glob
 from deflacue import deflacue
 from mutagen.flac import FLAC, Picture
 import os
+from pysplitcue.splitcue import PySplitCue
 import chardet
+import magic
 
 # CUE处理工具箱
 bias = "pro_"
 count = 0
 for k in glob.glob("*"):
     try:
+        if k.split("\\")[-1] == "deflacue":
+            continue
         if os.path.isdir(k):
             os.rename(k, bias + str(count))
             count += 1
