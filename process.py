@@ -6,6 +6,9 @@ from mutagen.flac import FLAC, Picture
 import os
 import chardet
 
+#不自动删除处理后的源文件 True为删除，False为不删除
+ifdelete = False
+
 # CUE处理工具箱
 bias = "pro_"
 count = 0
@@ -38,7 +41,7 @@ for k in arr:
             encoding = chardet.detect(data)['encoding']
         try:
             process = deflacue.Deflacue(source_path=cuen, encoding=encoding)
-            process.process_cue(cue_file=cuen, target_path=k, delete=True, music=music, img=img, needImage=True)
+            process.process_cue(cue_file=cuen, target_path=k, delete=ifdelete, music=music, img=img, needImage=True)
         except:
             print("分割错误：文件来源-" + c)
 
