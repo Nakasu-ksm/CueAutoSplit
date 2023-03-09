@@ -18,4 +18,4 @@ python process.py
 
 ## 感谢
 Sox
-[Deflacue](https://github.com/idlesign/deflacu/ "Deflacue")
+[Deflacue](https://github.com/idlesign/deflacue/ "Deflacue")
