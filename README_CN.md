@@ -1,5 +1,5 @@
 # CUE自动分割器
-ENGLISH	中文	日本语
+[ENGLISH](https://github.com/itoukou1/CueAutoSplit/blob/main/README.md "ENGLISH")	[中文](https://github.com/itoukou1/CueAutoSplit/blob/main/README_CN.md "中文")	[日本语](https://github.com/itoukou1/CueAutoSplit/blob/main/README_JA.md "日本语")
 
 ## 功能
 快速将cue分开(多文件夹)在某些情况下可以自动查找cue定义错误源文件和分割并自动查找cue编码。标签和封面(如果存在)在分割后自动添加。这个库通常用于分割多个线索(如日本动漫系列歌曲)。
